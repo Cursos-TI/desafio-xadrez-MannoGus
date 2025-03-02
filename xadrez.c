@@ -5,28 +5,33 @@
 // O objetivo é utilizar estruturas de repetição e funções para determinar os limites de movimentação dentro do jogo.
 
 int main() {
-    // Nível Novato - Movimentação das Peças
-    // Sugestão: Declare variáveis constantes para representar o número de casas que cada peça pode se mover.
 
-    // Implementação de Movimentação do Bispo
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação do Bispo em diagonal.
+    // VARIAVEIS COM VALORES DECLARADOS COM QUANTIDADES DE CASAS DE CADA PECA //
+    int  bispo = 0, rainha = 0;
 
-    // Implementação de Movimentação da Torre
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação da Torre para a direita.
 
-    // Implementação de Movimentação da Rainha
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação da Rainha para a esquerda.
+    // LOOP EM FOR PARA REPETIR A PALAVRA DIREITA 5 VEZES //
+    printf("Movimento da torre e : 5 casas a direita...\n");
+     for (int i=0; i < 5; i++) { // O LOOP SERA REPITIDO ATE QUE A VARIAVEL I SEJA IGUAL A VARIAVEL TORRE //
+        printf("Direita...\n");
+     }
 
-    // Nível Aventureiro - Movimentação do Cavalo
-    // Sugestão: Utilize loops aninhados para simular a movimentação do Cavalo em L.
-    // Um loop pode representar a movimentação horizontal e outro vertical.
+         printf("\n"); // PRINTF COM UM \N PARA SEPARAR OS MOVIMENTOS DAS PECAS //
+            // LOOP EM WHILE PARA REPETIR AS PAVALRAS PARA SIMULAR O MOVIMENTO DO BISPO EM DIAGONAL //
+      printf("O Movimento do Bipo e : 5 casas na Diagonal...\n");
+       while (bispo < 4){ // O LOOP SE TERMINA DEPOIS DE REPETIR 4 VEZES AS PALAVRA PARA QUE ASSIM DE A QUANTIDADE DO CASAS NA DIAGONAL//
+        printf("Cima...\nDireita...\n");
+        bispo++; // INCREMENTO NA VARIAVEL DO BISPO PARA QUE O LOOP NAO FIQUE INFINITO //
+       }
 
-    // Nível Mestre - Funções Recursivas e Loops Aninhados
-    // Sugestão: Substitua as movimentações das peças por funções recursivas.
-    // Exemplo: Crie uma função recursiva para o movimento do Bispo.
 
-    // Sugestão: Implemente a movimentação do Cavalo utilizando loops com variáveis múltiplas e condições avançadas.
-    // Inclua o uso de continue e break dentro dos loops.
+       printf("\n");
+       printf("O Movimento da rainha e : 8 casas para a Esquerda...\n");
+        do {
+           printf("Esquerda...\n");
+           rainha++; 
+        } while (rainha < 8);
 
+    
     return 0;
 }
